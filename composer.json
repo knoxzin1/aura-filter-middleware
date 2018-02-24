@@ -49,11 +49,11 @@
     },
     "scripts": {
         "check": [
-            "@cs",
+            "@cs-check",
             "@phpstan",
             "@test"
         ],
-        "cs": "phpcs",
+        "cs-check": "phpcs",
         "test": "phpunit",
         "phpstan": "phpstan analyze src",
         "test-coverage": "phpunit --colors=always --coverage-clover clover.xml"
