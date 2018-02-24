@@ -4,29 +4,23 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1135e7b34d289a5f66c781fbed17e441",
+    "content-hash": "290f0fdb342605cc063ade4a3cd4e5d5",
     "packages": [
         {
             "name": "aura/filter",
-            "version": "2.3.1",
+            "version": "3.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/auraphp/Aura.Filter.git",
-                "reference": "ac33b700379d1cb978a077328425153060a91ab5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/auraphp/Aura.Filter/zipball/ac33b700379d1cb978a077328425153060a91ab5",
-                "reference": "ac33b700379d1cb978a077328425153060a91ab5",
-                "shasum": ""
+                "url": "https://github.com/auraphp/Aura.Filter",
+                "reference": "664d3ebc504e1e7002f2653509411cff29550009"
             },
             "require": {
                 "ext-libxml": "*",
-                "php": ">=5.4.0"
+                "php": ">=5.5.0",
+                "psr/http-message": "~1.0"
             },
             "require-dev": {
-                "aura/di": "~2.0",
-                "phpunit/phpunit": "~5.7 || ~4.8"
+                "zendframework/zend-diactoros": "~1.0"
             },
             "suggest": {
                 "ext-iconv": "To support UTF-8 in string-length filters.",
@@ -34,23 +28,18 @@
                 "ext-mbstring": "To support UTF-8 in string-length filters."
             },
             "type": "library",
-            "extra": {
-                "aura": {
-                    "type": "library",
-                    "config": {
-                        "common": "Aura\\Filter\\_Config\\Common"
-                    }
-                }
-            },
             "autoload": {
                 "psr-4": {
-                    "Aura\\Filter\\": "src/",
-                    "Aura\\Filter\\_Config\\": "config/"
+                    "Aura\\Filter\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Aura\\Filter\\": "tests/"
+                }
+            },
             "license": [
-                "BSD-2-Clause"
+                "MIT"
             ],
             "authors": [
                 {
@@ -67,7 +56,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2017-04-20T05:28:07+00:00"
+            "time": "2016-05-21T14:29:00+00:00"
         },
         {
             "name": "fig/http-message-util",
@@ -2850,6 +2839,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "aura/filter": 20,
         "zendframework/zend-expressive-router": 15
     },
     "prefer-stable": false,
