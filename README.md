@@ -1,5 +1,8 @@
 # Aura Filter Middleware
 
+[![Build Status](https://secure.travis-ci.org/knoxzin1/aura-filter-middleware.svg?branch=master)](https://secure.travis-ci.org/knoxzin1/aura-filter-middleware)
+[![Coverage Status](https://coveralls.io/repos/github/knoxzin1/aura-filter-middleware/badge.svg?branch=master)](https://coveralls.io/github/knoxzin1/aura-filter-middleware?branch=master)
+
 Middleware to filter [Zend Expressive](https://github.com/zendframework/zend-expressive) requests using [Aura.Filter](https://github.com/auraphp/Aura.Filter).
 
 ## Requirements
